@@ -41,7 +41,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 
   <!-- More on helper.js in the class -->
   <script src="js/helper.js"></script>
-
+  <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
   <!--
   Uncomment the <script> tag below when you're ready to add an interactive
   Google Map to your resume!
@@ -52,8 +52,6 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 </head>
 <body unresolved>
   <div id="main">
-    Hello world!   <!-- You'll be deleting this line in the course -->
-
     <!--
     Everything from here to the <script> tag below is the skeleton of your
     website. Your code will add information to each of the sections of the
@@ -67,17 +65,17 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     <div id="workExperience" class='gray'>
       <h2>Work Experience</h2>
     </div>
-    <div id="projects">
+    <div id="projects" class="light-gray">
       <h2>Projects</h2>
     </div>
     <div id="education" class='gray'>
       <h2>Education</h2>
     </div>
-    <div id="mapDiv">
+    <div id="mapDiv" class="light-gray">
       <h2>Where I've Lived and Worked</h2>
     </div>
     <div id="letsConnect" class='dark-gray'>
-      <h2 class='orange center-text'>Let's Connect</h2>
+      <h2 class='orange center-text coltext'>Let's Connect</h2>
         <ul id="footerContacts" class="flex-box">
       </ul>
     </div>
@@ -127,12 +125,12 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
       document.getElementById('projects').style.display = 'none';
     }
     if(document.getElementsByClassName('education-entry').length === 0) {
-      document.getElementById('education').style.display = 'none';
+      document.getElementById('education').style.display = 'black';
     }
     if(document.getElementsByClassName('flex-item').length === 0) {
       document.getElementById('letsConnect').style.display = 'none';
     }
-    if(document.getElementById('map') === null) {
+    if(document.getElementById('map') === undefined) {
       document.getElementById('mapDiv').style.display = 'none';
     }
   </script>

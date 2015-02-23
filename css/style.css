@@ -15,7 +15,7 @@
 
 h1 {
   font-size: 40px;
-  color: #F5A623;
+  color: #c9e1c1;
   line-height: 48px;
   display: inline;
 }
@@ -23,15 +23,15 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 24px;
-  color: #999999;
+  color: #7f909a;
   line-height: 29px;
   padding: 10px;
 }
 
 h3 {
   font-style: italic;
-  font-size: 20px;
-  color: #000000;
+  font-size: 18px;
+  color: #7f909a;;
   line-height: 22px;
 }
 
@@ -87,16 +87,16 @@ a {
 }
 
 #skillsH3 {
-  color: #F5AE23;
+  color: #c9e1c1;
   display: none;
 }
 
 .orange {
-  background-color: #F5AE23;
+  background-color: #0f9fb4;
 }
 
 .orange-text {
-  color: #F5AE23;
+  color: #0f9fb4;
 }
 
 .white-text {
@@ -105,20 +105,29 @@ a {
 }
 
 .gray {
-  background-color: #F3F3F3;
+  background-color: #faf9f4;
   padding-bottom: 10px;
   clear:both;
 }
-
+.whit-text {
+  color: #0f9fb4;
+}
 .dark-gray {
-  background-color: #4A4A4A;
+  background-color: #1d2f3e;
+}
+
+.light-gray {
+/*  background-color: #efefef;*/
 }
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: #152737;
 }
 
+.coltext {
+  color: #152737;
+}
 .flex-box {
   display: -webkit-flex;
   display: flex;
@@ -212,4 +221,8 @@ span {
   .biopic {
     display: block;
   }
+}
+.prj {
+    width: 300px;
+    height: 250px;
 }
